@@ -1,0 +1,40 @@
+# Ignora archivos generados por Node.js
+node_modules/
+dist/
+build/
+
+# Ignora archivos de configuración local
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignora archivos de logs
+*.log
+logs/
+
+# Ignora archivos de IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignora archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignora archivos de TypeScript (si no quieres subir los .js generados)
+*.js
+*.js.map
+
+# Ignora archivos de cobertura de pruebas
+coverage/
+
+# Ignora archivos de npm/yarn
+package-lock.json
+yarn.lock
+
+# Ignora archivos de caché
+.cache/
+.temp/
