@@ -5,6 +5,7 @@ interface User {
   firstName: string;
   lastName: string;
   isAdmin: boolean;
+  role: "admin" | "user" | "super-admin";
 }
 
 // assigning types to variables
@@ -13,6 +14,8 @@ const defaultUser: User = {
   firstName: "Richard",
   lastName: "Rodriguez",
   isAdmin: true,
+  // @ts-expect-error
+  role: "admin",
 };
 
 const getUserId = (user: User) => {
